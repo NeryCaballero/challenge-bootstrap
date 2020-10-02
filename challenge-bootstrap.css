@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto Mono', monospace!important;
+    font-size: 0.9em!important;
 }
 
 #cards-container button:hover {
@@ -9,4 +10,8 @@ body {
 	-webkit-box-shadow: 7px 7px 40px 3px #D5D5FA, -7px -7px 40px 3px #D5D5FA;
 	-ms-box-shadow: 7px 7px 40px 3px #D5D5FA, -7px -7px 40px 3px #D5D5FA;
     box-shadow: 7px 7px 40px 3px #D5D5FA, -7px -7px 40px 3px #D5D5FA;
+}
+
+#sidebar li:hover {
+    background-color: #6D69FB;
 }

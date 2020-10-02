@@ -12,8 +12,8 @@ body {
     box-shadow: 7px 7px 40px 3px #D5D5FA, -7px -7px 40px 3px #D5D5FA;
 }
 
-#sidebar {
-    font-size: 50%;
+#sidebar i {
+    font-size: 200%;
 } 
 
 @media (min-width: 768px) {

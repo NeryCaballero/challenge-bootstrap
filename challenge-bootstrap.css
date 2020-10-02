@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto Mono', monospace!important;
-    font-size: 12px!important;
+    font-size: 10px!important;
 }
 
 #cards-container button:hover {
@@ -13,8 +13,17 @@ body {
 }
 
 #sidebar {
-    font-size: 160%;
+    font-size: 50%;
+} 
+
+@media (min-width: 768px) {
+
+    body {
+        font-size: 14px!important;
+    }
+
 }
+
 #sidebar li:hover {
     background-color: #6D69FB;
 }

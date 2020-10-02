@@ -9,97 +9,148 @@
         <!-- BootstrapCDN js --> <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
         <!-- Google Fonts --> <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     </head>
+
     <body class="bg-light bg-gradient"> <!-- Why is "text-monospace" not working ? -->
         
-        <!-- Cards container -->
-        <div id="cards-container" class="container-fluid p-4">  
-                <!-- Row 1 -->
-                <div class="row g-5 mb-5 justify-content-center">
-                    <!-- Col 1 -->
-                    <div class="col col-sm-6 col-lg-3">
-                        <div class="p-3 border bg-light text-center shadow rounded">
-                            <img class="my-3" src="svg/3.svg" alt="ilustration of a programmer" height="80px">
-                            <h5 class="my-3">My Header</h5>
-                            <p class="p-2 text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi voluptatibus dicta temporibus nisi, earum, consectetur libero aliquid corporis, maiores numquam doloremque facilis? Nesciunt vitae quis quasi voluptates quas nemo quam!</p>
-                            <hr class="w-25 mx-auto">
-                            <button class="btn btn-lg text-muted px-4 py-2 my-3" data-toggle="tooltip" data-placement="bottom" title="Tooltip">Learn More</button>
-                        </div>
-                    </div>
-                    <!-- Col 2 -->
-                    <div class="col col-sm-6 col-lg-3">
-                        <div class="p-3 border bg-light text-center shadow rounded">
-                            <img class="my-3" src="svg/3.svg" alt="ilustration of a programmer" height="80px">
-                            <h5 class="my-3">My Header</h5>
-                            <p class="p-2 text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi voluptatibus dicta temporibus nisi, earum, consectetur libero aliquid corporis, maiores numquam doloremque facilis? Nesciunt vitae quis quasi voluptates quas nemo quam!</p>
-                            <hr class="w-25 mx-auto">
-                            <button class="btn btn-lg text-muted px-4 py-2 my-3" data-toggle="tooltip" data-placement="bottom" title="Tooltip">Learn More</button>
-                        </div>
-                    </div>
-                    <!-- Col 3 -->
-                    <div class="col col-sm-6 col-lg-3">
-                        <div class="p-3 border bg-light text-center shadow rounded">
-                            <img class="my-3" src="svg/3.svg" alt="ilustration of a programmer" height="80px">
-                            <h5 class="my-3">My Header</h5>
-                            <p class="p-2 text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi voluptatibus dicta temporibus nisi, earum, consectetur libero aliquid corporis, maiores numquam doloremque facilis? Nesciunt vitae quis quasi voluptates quas nemo quam!</p>
-                            <hr class="w-25 mx-auto">
-                            <button class="btn btn-lg text-muted px-4 py-2 my-3" data-toggle="tooltip" data-placement="bottom" title="Tooltip">Learn More</button>
-                        </div>
-                    </div>
-                    <!-- Col 4 -->
-                    <div class="col col-sm-6 col-lg-3">
-                        <div class="p-3 border bg-light text-center shadow rounded">
-                            <img class="my-3" src="svg/3.svg" alt="ilustration of a programmer" height="80px">
-                            <h5 class="my-3">My Header</h5>
-                            <p class="p-2 text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi voluptatibus dicta temporibus nisi, earum, consectetur libero aliquid corporis, maiores numquam doloremque facilis? Nesciunt vitae quis quasi voluptates quas nemo quam!</p>
-                            <hr class="w-25 mx-auto">
-                            <button class="btn btn-lg text-muted px-4 py-2 my-3" data-toggle="tooltip" data-placement="bottom" title="Tooltip">Learn More</button>
-                        </div>
-                    </div>
+        <!-- Full Screen -->
+        <div class="row">
+            <!-- Site Nav --> <!-- Col 1 -->
+            <nav id="sidebar" class="col-2 text-center collapse bg-dark">
+                <div id="sidebar-title">
+                    <h2 class="py-5 mx-auto text-warning">LOGO</h2>
+                    <h4 class="py-3 text-info">Welcome</h4>
                 </div>
+                <ul id="links-section" class="list-unstyled components"> <!--components sirve para QUE?-->
+                    <!-- Link 1 : with toggle dropdown -->
+                    <li class="active py-3 mt-5">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link font-weight-bold text-light">Home</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li class="py-3 ">
+                                <a class="nav-link font-weight-bold text-light" href="#">Home 1</a>
+                            </li>
+                            <li class="py-3">
+                                <a class="nav-link font-weight-bold text-light" href="#">Home 2</a>
+                            </li>
+                            <li class="py-3">
+                                <a class="nav-link font-weight-bold text-light" href="#">Home 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Link 2 -->
+                    <li class="py-3">
+                        <a class="nav-link font-weight-bold text-light" href="#">Link 1</a>
+                    </li>
+                    <!-- Link 3 -->
+                    <li class="py-3">
+                        <a class="nav-link font-weight-bold text-light" href="#">Link 2</a>
+                    </li>
+                    <!-- Link 4 -->
+                    <li class="py-3">
+                        <a class="nav-link font-weight-bold text-light" href="#">Link 3</a>
+                    </li>
+                    <!-- Link 5 -->
+                    <li class="py-3">
+                        <a class="nav-link font-weight-bold text-light" href="#">Link 4</a>
+                    </li>
+                </ul>
+            </nav>
 
-                <!-- Row 2 -->
-                <div class="row g-5">
-                    <!-- Col 1 -->
-                    <div class="col col-sm-6 col-lg-3">
-                        <div class="p-3 border bg-light text-center shadow rounded">
-                            <img class="my-3" src="svg/8.svg" alt="ilustration of a programmer" height="80px">
-                            <h5 class="my-3">My Header</h5>
-                            <p class="p-2 text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi voluptatibus dicta temporibus nisi, earum, consectetur libero aliquid corporis, maiores numquam doloremque facilis? Nesciunt vitae quis quasi voluptates quas nemo quam!</p>
-                            <hr class="w-25 mx-auto">
-                            <button class="btn btn-lg text-muted px-4 py-2 my-3" data-toggle="tooltip" data-placement="bottom" title="Tooltip">Learn More</button>
+            <!-- Cards container --> <!-- Col 2 -->
+            
+            <div id="cards-container" class="col-10 container-fluid p-4">  
+                     <!-- Row 1 -->
+                    <div class="row g-5 p-4 mb-5">
+                        <a role="button"  class="col-1 btn btn-outline-info" href="#sidebar" data-toggle="collapse" aria-expanded="false">Show <br/> Menu</a> 
+                        <h1 class="col-11">My Very Very Beautiful Site</h1>
+                    </div>
+                    <!-- Row 2 -->
+                    <div class="row g-5 mb-5 justify-content-center">
+                        <!-- Col 1 -->
+                        <div class="col col-sm-6 col-lg-3">
+                            <div class="p-3 border bg-light text-center shadow rounded">
+                                <img class="my-3" src="svg/3.svg" alt="ilustration of a programmer" height="80px">
+                                <h5 class="my-3">My Header</h5>
+                                <p class="p-2 text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi voluptatibus dicta temporibus nisi, earum, consectetur libero aliquid corporis, maiores numquam doloremque facilis? Nesciunt vitae quis quasi voluptates quas nemo quam!</p>
+                                <hr class="w-25 mx-auto">
+                                <button class="btn btn-lg text-muted px-4 py-2 my-3" data-toggle="tooltip" data-placement="bottom" title="Tooltip">Learn More</button>
+                            </div>
+                        </div>
+                        <!-- Col 2 -->
+                        <div class="col col-sm-6 col-lg-3">
+                            <div class="p-3 border bg-light text-center shadow rounded">
+                                <img class="my-3" src="svg/3.svg" alt="ilustration of a programmer" height="80px">
+                                <h5 class="my-3">My Header</h5>
+                                <p class="p-2 text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi voluptatibus dicta temporibus nisi, earum, consectetur libero aliquid corporis, maiores numquam doloremque facilis? Nesciunt vitae quis quasi voluptates quas nemo quam!</p>
+                                <hr class="w-25 mx-auto">
+                                <button class="btn btn-lg text-muted px-4 py-2 my-3" data-toggle="tooltip" data-placement="bottom" title="Tooltip">Learn More</button>
+                            </div>
+                        </div>
+                        <!-- Col 3 -->
+                        <div class="col col-sm-6 col-lg-3">
+                            <div class="p-3 border bg-light text-center shadow rounded">
+                                <img class="my-3" src="svg/3.svg" alt="ilustration of a programmer" height="80px">
+                                <h5 class="my-3">My Header</h5>
+                                <p class="p-2 text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi voluptatibus dicta temporibus nisi, earum, consectetur libero aliquid corporis, maiores numquam doloremque facilis? Nesciunt vitae quis quasi voluptates quas nemo quam!</p>
+                                <hr class="w-25 mx-auto">
+                                <button class="btn btn-lg text-muted px-4 py-2 my-3" data-toggle="tooltip" data-placement="bottom" title="Tooltip">Learn More</button>
+                            </div>
+                        </div>
+                        <!-- Col 4 -->
+                        <div class="col col-sm-6 col-lg-3">
+                            <div class="p-3 border bg-light text-center shadow rounded">
+                                <img class="my-3" src="svg/3.svg" alt="ilustration of a programmer" height="80px">
+                                <h5 class="my-3">My Header</h5>
+                                <p class="p-2 text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi voluptatibus dicta temporibus nisi, earum, consectetur libero aliquid corporis, maiores numquam doloremque facilis? Nesciunt vitae quis quasi voluptates quas nemo quam!</p>
+                                <hr class="w-25 mx-auto">
+                                <button class="btn btn-lg text-muted px-4 py-2 my-3" data-toggle="tooltip" data-placement="bottom" title="Tooltip">Learn More</button>
+                            </div>
                         </div>
                     </div>
-                    <!-- Col 2 -->
-                    <div class="col col-sm-6 col-lg-3">
-                        <div class="p-3 border bg-light text-center shadow rounded">
-                            <img class="my-3" src="svg/8.svg" alt="ilustration of a programmer" height="80px">
-                            <h5 class="my-3">My Header</h5>
-                            <p class="p-2 text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi voluptatibus dicta temporibus nisi, earum, consectetur libero aliquid corporis, maiores numquam doloremque facilis? Nesciunt vitae quis quasi voluptates quas nemo quam!</p>
-                            <hr class="w-25 mx-auto">
-                            <button class="btn btn-lg text-muted px-4 py-2 my-3" data-toggle="tooltip" data-placement="bottom" title="Tooltip">Learn More</button>
+
+                    <!-- Row 3 -->
+                    <div class="row g-5">
+                        <!-- Col 1 -->
+                        <div class="col col-sm-6 col-lg-3">
+                            <div class="p-3 border bg-light text-center shadow rounded">
+                                <img class="my-3" src="svg/8.svg" alt="ilustration of a programmer" height="80px">
+                                <h5 class="my-3">My Header</h5>
+                                <p class="p-2 text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi voluptatibus dicta temporibus nisi, earum, consectetur libero aliquid corporis, maiores numquam doloremque facilis? Nesciunt vitae quis quasi voluptates quas nemo quam!</p>
+                                <hr class="w-25 mx-auto">
+                                <button class="btn btn-lg text-muted px-4 py-2 my-3" data-toggle="tooltip" data-placement="bottom" title="Tooltip">Learn More</button>
+                            </div>
+                        </div>
+                        <!-- Col 2 -->
+                        <div class="col col-sm-6 col-lg-3">
+                            <div class="p-3 border bg-light text-center shadow rounded">
+                                <img class="my-3" src="svg/8.svg" alt="ilustration of a programmer" height="80px">
+                                <h5 class="my-3">My Header</h5>
+                                <p class="p-2 text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi voluptatibus dicta temporibus nisi, earum, consectetur libero aliquid corporis, maiores numquam doloremque facilis? Nesciunt vitae quis quasi voluptates quas nemo quam!</p>
+                                <hr class="w-25 mx-auto">
+                                <button class="btn btn-lg text-muted px-4 py-2 my-3" data-toggle="tooltip" data-placement="bottom" title="Tooltip">Learn More</button>
+                            </div>
+                        </div>
+                        <!-- Col 3 -->
+                        <div class="col col-sm-6 col-lg-3">
+                            <div class="p-3 border bg-light text-center shadow rounded">
+                                <img class="my-3" src="svg/8.svg" alt="ilustration of a programmer" height="80px">
+                                <h5 class="my-3">My Header</h5>
+                                <p class="p-2 text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi voluptatibus dicta temporibus nisi, earum, consectetur libero aliquid corporis, maiores numquam doloremque facilis? Nesciunt vitae quis quasi voluptates quas nemo quam!</p>
+                                <hr class="w-25 mx-auto">
+                                <button class="btn btn-lg text-muted px-4 py-2 my-3" data-toggle="tooltip" data-placement="bottom" title="Tooltip">Learn More</button>
+                            </div>
+                        </div>
+                        <!-- Col 4 -->
+                        <div class="col col-sm-6 col-lg-3">
+                            <div class="p-3 border bg-light text-center  rounded">
+                                <img class="my-3" src="svg/8.svg" alt="ilustration of a programmer" height="80px">
+                                <h5 class="my-3">My Header</h5>
+                                <p class="p-2 text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi voluptatibus dicta temporibus nisi, earum, consectetur libero aliquid corporis, maiores numquam doloremque facilis? Nesciunt vitae quis quasi voluptates quas nemo quam!</p>
+                                <hr class="w-25 mx-auto">
+                                <button class="btn btn-lg text-muted px-4 py-2 my-3" data-toggle="tooltip" data-placement="bottom" title="Tooltip">Learn More</button>
+                            </div>
                         </div>
                     </div>
-                    <!-- Col 3 -->
-                    <div class="col col-sm-6 col-lg-3">
-                        <div class="p-3 border bg-light text-center shadow rounded">
-                            <img class="my-3" src="svg/8.svg" alt="ilustration of a programmer" height="80px">
-                            <h5 class="my-3">My Header</h5>
-                            <p class="p-2 text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi voluptatibus dicta temporibus nisi, earum, consectetur libero aliquid corporis, maiores numquam doloremque facilis? Nesciunt vitae quis quasi voluptates quas nemo quam!</p>
-                            <hr class="w-25 mx-auto">
-                            <button class="btn btn-lg text-muted px-4 py-2 my-3" data-toggle="tooltip" data-placement="bottom" title="Tooltip">Learn More</button>
-                        </div>
-                    </div>
-                    <!-- Col 4 -->
-                    <div class="col col-sm-6 col-lg-3">
-                        <div class="p-3 border bg-light text-center  rounded">
-                            <img class="my-3" src="svg/8.svg" alt="ilustration of a programmer" height="80px">
-                            <h5 class="my-3">My Header</h5>
-                            <p class="p-2 text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi voluptatibus dicta temporibus nisi, earum, consectetur libero aliquid corporis, maiores numquam doloremque facilis? Nesciunt vitae quis quasi voluptates quas nemo quam!</p>
-                            <hr class="w-25 mx-auto">
-                            <button class="btn btn-lg text-muted px-4 py-2 my-3" data-toggle="tooltip" data-placement="bottom" title="Tooltip">Learn More</button>
-                        </div>
-                    </div>
-                </div>
+            </div>
         </div>
 
         <script>
